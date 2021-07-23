@@ -18,6 +18,8 @@
 
 		<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 		<script src="https://unpkg.com/video.js/dist/video.js"></script>
+	<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
 		<!-- videojs-contrib-hls 用于在电脑端播放 如果只需移动端播放可以不引入 -->
 	</head>
 	<body>
@@ -55,7 +57,47 @@
 		}
 	</script>
 
-i
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button>
+  <br> 
+  <video id="video1" width="420">
+    <source src="/statics/demosource/mov_bbb.mp4" type="video/mp4">
+    <source src="/statics/demosource/mov_bbb.ogg" type="video/ogg">
+    您的浏览器不支持 HTML5 video 标签。
+  </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=560; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=420; 
+} 
+</script> 
+
 
 </body>
 </html> 
