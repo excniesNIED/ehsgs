@@ -15,9 +15,8 @@
 <script type="text/javascript" src="http://excnies.gitee.io/fwjs/min.js"></script>
 <script type="text/javascript" src="http://excnies.gitee.io/fwjs/fireworks.js"></script>
 <body>
-<p><a><style>body,p,a {margin:0px}</style><iframe  scrolling="no" style="width:100%; height:100%;position:absolute;margin:0px" frameborder="0"   src="http://live.cgtn.com/1000/prog_index.m3u8"></iframe></a></p>
 
-
+<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script> <video id="video"></video> <script> if(Hls.isSupported()) { var video = document.getElementById('video'); var hls = new Hls(); hls.loadSource('http://39.135.32.24:6610/000000001000/1000000001000004794/index.m3u8?i=&IASHttpSessionId=OTT1585220210723034657003395/000000001000/1000000001000004794/index.m3u8'); hls.attachMedia(video); hls.on(Hls.Events.MANIFEST_PARSED,function() { video.play(); }); } </script>
 
 
 
