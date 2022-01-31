@@ -245,16 +245,10 @@
 		this.timeSliderLeftTemp = 0;
 		//全局变量：判断是否记录了总时间
 		this.durationSendJS = false;
-		//全局变量：初始化广告分析是否结束设置
-		this.adAnalysisEnd = false;
-		//全局变量：广告变量
-		this.advertisements = {};
+	
 		//全局变量：是否是第一次播放视频
 		this.isFirstTimePlay = true;
-		//全局变量：当前需要播放的广告类型
-		this.adType = '';
-		//全局变量：播放广告计数
-		this.adI = 0;
+
 		//全局变量：要播放的临时地址
 		this.videoTemp = {
 			src: '',
@@ -262,33 +256,7 @@
 			currentSrc: '',
 			loop: false
 		};
-		//全局变量：当前要播放的广告组总时间
-		this.adTimeAllTotal = 0;
-		//全局变量：肖前要播放的广告时间
-		this.adTimeTotal = 0;
-		//全局变量：用来做倒计时
-		this.adCountDownObj = null;
-		//全局变量：前置，中插，结尾广告是否已开始运行
-		this.adPlayStart = false;
-		//全局变量：目前是否在播放广告
-		this.adPlayerPlay = false;
-		//全局变量：当前广告是否暂停
-		this.adIsPause = false;
-		//全局变量：视频广告是否静音
-		this.adVideoMute = false;
-		//全局变量：是否需要记录当前播放的时间供广告播放结束后进行跳转
-		this.adIsVideoTime = false;
-		//全局变量：后置广告是否播放
-		this.endAdPlay = false;
-		//全局变量：暂停广告是否在显示
-		this.adPauseShow = false;
-		//全局变量：是否需要重置广告以实现重新播放时再播放一次
-		this.adReset = false;
-		//全局变量：记录鼠标在视频上点击时的坐标
-		this.videoClickXy={x:0,y:0};
-		//全局变量：是否在播放广告时播放过视频广告
-		this.adVideoPlay = false;
-		
+	
 		//全局变量：临时存储已加载时间的变量
 		this.loadTimeTemp=0;
 		//全局变量，临时存储hls形式下首次加载时是否需要暂停或播放的判断
