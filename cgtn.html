@@ -28,6 +28,7 @@
 				container: '#video', //容器的ID或className
 				variable: 'player',//播放函数名称
 				video: [//视频地址列表形式
+			        ['http://live-dtocnc-cdn.ysp.cctv.cn/D5B3469503098735866ECDE097219908605BF3BD313367B52BF904BCC8681F85F1572413D1A4DC193B7008B9376AC73DDA83E3F207C7C263DCEF271E5C85466279597785AC952BD39A2234624A5CD407C28BDFE721B20570F10A3FA9D4E6D67288DA31C49AA64143F2C6870267901A1FB660380C6FE41017F61AE23E2F067E0AD892D6CBE0BA8633F65945293F64962627BD38808A59F72E3C11728F0BBFCD42/2001656803.m3u8', 'video/m3u8', 'CCTV4', 0],
 			        ['http://39.135.32.24:6610/000000001000/1000000001000004794/index.m3u8?i=&IASHttpSessionId=OTT1585220210723034657003395/000000001000/1000000001000004794/index.m3u8', 'video/m3u8', 'CCTV5 1', 0],
 					['http://183.207.248.71:80/cntv/live1/HD-8000k-1080P-cctv5/HD-8000k-1080P-cctv5', 'CCTV5 2', 0]
 					['http://183.207.248.71:80/cntv/live1/HD-8000k-1080P-cctv16/HD-8000k-1080P-cctv16', 'video/m3u8', 'CCTV16 1', 0],
@@ -38,16 +39,13 @@
 			};
 			var player = new ckplayer(videoObject);
 		</script>
-		<p> 请使用手机或<a href="http://82.156.206.121:2222/excrwg/Softwares/Runtime/CleanFlash-34.0.0.192_Installer%20.exe">点击这里安装CleanFlash</a>观看</p><p>如果浏览器支持投屏可投屏至电视以获得更好观看体验</p>
+		<p> 请使用手机或<a href="http://82.156.206.121:2222/excrwg/Softwares/Runtime/CleanFlash-34.0.0.192_Installer%20.exe">点击这里安装CleanFlash</a>观看</p>
+<p>如果浏览器支持投屏可投屏至电视以获得更好观看体验</p>
 <p>连续点击三次视频框以全屏</p>
 
 
 		
 		<p>
-		  <button type="button" onclick="player.playOrPause()"><img src="play.png"></button>
-			<button type="button" onclick="player.videoMute()"><img src="ns.png"></button>
-		</p>
-
 		  <button type="button" onclick="player.playOrPause()"><img src="play.png"></button>
 			<button type="button" onclick="player.videoMute()"><img src="ns.png"></button>
 		</p>
